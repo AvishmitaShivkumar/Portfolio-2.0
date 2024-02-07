@@ -9,6 +9,7 @@ export default createGlobalStyle`
 --color-primary: #2C1E02;
 --color-secondary: #F4DFD1;
 --color-tertiary: #A78759;
+background-color: var(--color-primary);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -42,8 +43,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+h1 {
+	font-family: var(--header-font-family);
+}
+h2 {
+	font-family: var(--subheader-font-family);
+}
 body {
-	line-height: 1;
+	line-height: 1.2;
+	font-family: var(--body-font-family);
 }
 ol, ul {
 	list-style: none;
